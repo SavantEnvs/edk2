@@ -1,0 +1,8 @@
+project: savantenvs/edk2
+target: TestVirtio10Blk
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/TestVirtio10Blk/testsuite
+cmds:
+  - cmd: /mayhem/TestVirtio10Blk
+    libfuzzer: true

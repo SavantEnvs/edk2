@@ -1,0 +1,8 @@
+project: savantenvs/edk2
+target: TestFileName
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/TestFileName/testsuite
+cmds:
+  - cmd: /mayhem/TestFileName
+    libfuzzer: true

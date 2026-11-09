@@ -1,0 +1,8 @@
+project: savantenvs/edk2
+target: TestVirtioPciDevice
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/TestVirtioPciDevice/testsuite
+cmds:
+  - cmd: /mayhem/TestVirtioPciDevice
+    libfuzzer: true
