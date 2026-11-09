@@ -1,0 +1,8 @@
+project: savantenvs/edk2
+target: TestBmpSupportLib
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/TestBmpSupportLib/testsuite
+cmds:
+  - cmd: /mayhem/TestBmpSupportLib
+    libfuzzer: true

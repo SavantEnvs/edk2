@@ -1,0 +1,8 @@
+project: savantenvs/edk2
+target: TestFmpAuthenticationLibPkcs7
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/TestFmpAuthenticationLibPkcs7/testsuite
+cmds:
+  - cmd: /mayhem/TestFmpAuthenticationLibPkcs7
+    libfuzzer: true

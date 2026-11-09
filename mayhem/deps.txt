@@ -1,0 +1,11 @@
+# name  sha  url  submodule-path-in-tree (- = none)
+# The five submodules are pinned to the gitlinks upstream records (git ls-tree HEAD <path>); the
+# build only needs their directories to exist and BaseTools needs brotli. hbfa-fl is Intel's
+# HBFA harness framework (the OSS-Fuzz harnesses for edk2).
+hbfa-fl  da0c246bb6876130941c750d5dce57a3319cadba  https://github.com/intel/hbfa-fl.git  -
+brotli   e230f474b87134e8c6c85b630084c612057f253e  https://github.com/google/brotli.git  BaseTools/Source/C/BrotliCompress/brotli
+mbedtls  0bebf8b8c7f07abe3571ded48a11aa907a1ffb20  https://github.com/Mbed-TLS/mbedtls.git  CryptoPkg/Library/MbedTlsLib/mbedtls
+openssl  8cf17aaeb4599f8af87fefd810b5b5fee90fe69e  https://github.com/openssl/openssl.git  CryptoPkg/Library/OpensslLib/openssl
+mipisyst 370b5944c046bab043dd8b133727b2135af7747a  https://github.com/MIPI-Alliance/public-mipi-sys-t.git  MdePkg/Library/MipiSysTLib/mipisyst
+libspdm  f55cf6d48ec69b4ac60a63903e9c6a2cb0fd155d  https://github.com/DMTF/libspdm.git  SecurityPkg/DeviceSecurity/SpdmLib/libspdm
+brotli   e230f474b87134e8c6c85b630084c612057f253e  https://github.com/google/brotli.git  MdeModulePkg/Library/BrotliCustomDecompressLib/brotli

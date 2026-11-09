@@ -1,0 +1,8 @@
+project: savantenvs/edk2
+target: TestFmpAuthenticationLibRsa2048Sha256
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/TestFmpAuthenticationLibRsa2048Sha256/testsuite
+cmds:
+  - cmd: /mayhem/TestFmpAuthenticationLibRsa2048Sha256
+    libfuzzer: true

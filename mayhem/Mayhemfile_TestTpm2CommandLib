@@ -1,0 +1,8 @@
+project: savantenvs/edk2
+target: TestTpm2CommandLib
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/TestTpm2CommandLib/testsuite
+cmds:
+  - cmd: /mayhem/TestTpm2CommandLib
+    libfuzzer: true
