@@ -1,0 +1,8 @@
+project: savantenvs/edk2
+target: TestPeiUsb
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/TestPeiUsb/testsuite
+cmds:
+  - cmd: /mayhem/TestPeiUsb
+    libfuzzer: true

@@ -1,0 +1,26 @@
+## @file
+#  Known-answer oracle for BaseBmpSupportLib, built with normal flags by mayhem/build.sh.
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = OracleBmp
+  FILE_GUID                      = 6B1E7A0C-52D4-4F8E-9B3A-0D5C7E2F4A11
+  MODULE_TYPE                    = USER_DEFINED
+  VERSION_STRING                 = 1.0
+
+[Sources]
+  OracleBmp.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  UefiHostTestPkg/UefiHostTestPkg.dec
+
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  DebugLib
+  SafeIntLib
+  BmpSupportLib
